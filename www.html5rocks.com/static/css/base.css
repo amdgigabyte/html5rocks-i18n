@@ -1,0 +1,322 @@
+/* For browsers that do not yet support these elements */
+section, article, header, footer {
+  display: block;
+}
+body { 
+  color: #222;
+  background-color: #ddd;
+  font: 14px Arial;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  color: #3D5C9D;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+#wrap {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  background-color: white;
+  width: 73.074em;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 40px;
+  -webkit-box-shadow: #ccc 4px 0px 10px, #ccc -4px 0px 10px, #aaa 0px 38px 36px -24px;
+  -moz-box-shadow: #ccc 4px 0px 10px, #ccc -4px 0px 10px, #aaa 0px 38px 36px -24px;
+  box-shadow: #ccc 4px 0px 10px, #ccc -4px 0px 10px, #aaa 0px 38px 36px -24px;
+  
+}
+header {
+  border-bottom: 2px solid #222;
+  overflow: hidden;
+}
+article header {
+  border: none;
+}
+h1#title {
+  cursor: pointer;
+  font-size: 55px;
+  margin: 0;
+  padding: 20px 0 20px 1px;
+  float: left;
+  width: auto;
+}
+
+#title { 
+  font-style: normal; 
+  font-weight: bold; 
+}
+
+#title .normal {
+  font-family: 'Droid Sans', Arial;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.09em;
+  padding-right: 4px;
+}
+
+#title .five { 
+  color: #fff;
+  font-family: 'Droid Sans', Arial;
+  text-shadow: 1px 0px 1px #000, -1px 0px 1px #000;
+}
+.no-textshadow #title .five { 
+  color: #bbb;
+}
+
+#title .rocks { 
+  font-family: 'Droid Sans', Arial;
+  color: #3D5C9D;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.09em;
+  margin-left: -3px;
+}
+
+#section-header #title {
+  font-size: 39px;
+  width: auto;
+}
+
+#section-header #title .rocks {
+  margin-left: -1px;
+}
+
+header nav ul {
+  padding-left: 0;
+  list-style: none;
+  float: right;
+  padding-top: 30px;
+}
+
+#section-header nav ul {
+  padding-top: 21px;
+}
+
+header nav ul li {
+  float: left;
+  padding: 0 3px 0 8px;
+}
+header nav ul li a.current {
+  color: #222;
+  font-weight: bold;
+}
+.breadcrumb {
+  font-size: 90%;
+}
+.compatible-block {
+  padding: 10px 0;
+  text-align: center;
+}
+#controls {
+  padding: 5px;
+}
+#notcompatible,
+#compatible {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#notcompatible {
+  background: #de8b8b;
+  color: #fff;
+}
+#compatible {
+  background: #696;
+  color: #fff;
+}
+a.buttonlink {
+  text-decoration: none;
+  margin-top: 10px;
+}
+a.buttonlink img {
+  vertical-align: -30%;
+}
+a.buttonlink span {
+  text-decoration: underline;
+}
+
+a img {
+  border: 0;
+}
+
+article section h1, article section h2, article section h3 {
+  font-family: Helvetica, Trebuchet MS, Arial; 
+  margin: 30px 0 10px 0;
+  padding: 0;
+}
+article section a[href^='http']:not([href*='html5rocks.']) {
+  background: transparent url(data:image/png;base64,R0lGODlhCQAMAMQAAPr7/Cpdi6q/0X2duURxmjRlkfz9/vz8/TVlkae8z4+qwoWivTlplDVmkvv8/Up1nUVymvn6/LrL2i1gjStejKS6zkNwmUFvmD5slkJwmbjJ2DZnkqm90Cdbiv///wAAACH5BAEAAB4ALAAAAAAJAAwAAAU6oCeOY7R0aNoByWURQUoOMTpqD0p1Ird1hEGGJ/gVJB5Ip9gpcESYDqOD4BxEFcWkwTGMHACSeDwKAQA7) no-repeat center right;
+  padding-right: 14px;
+}
+h1 { 
+  font-size: 200%; 
+}
+h2 { 
+  font-size: 150%; 
+}
+h3 {
+  font-size: 100%;
+}
+p {
+  padding: 0;
+  margin: 10px 0;
+}
+pre {
+  padding: 10px 20px;
+  background: rgba(255, 0, 0, 0.05);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+code {
+  font: 13px Monaco, monospace; 
+  color: #060;
+}
+pre code {
+  display: block;
+  overflow: auto; 
+  margin: 0;
+  padding: 0;
+}
+em { 
+  font-weight: bold; 
+  color: #000; 
+  font-style: normal; 
+}
+
+.date { 
+  font-size: 85%; 
+  color: #bbb; 
+  font-style: italic;
+  float: left;
+}
+article header.article_header {
+  clear: both;
+}
+article.sample .tag,
+aside > .tag {
+  font-size: 75%;
+  /* color: #ff5a5a; */
+  color: #696;
+  padding: 4px;
+  text-decoration: underline;
+}
+article.sample .date {
+  padding: 4px 0;
+  margin-right: 5px;
+}
+.hidden {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.sample_title, .last_p { 
+  margin-top: 30px; 
+}
+.old { 
+  color: #696;
+}
+.new { 
+  font-weight: bold; 
+  color: #060;
+}
+.browser_support {
+  float: left;
+  font-size: 85%;
+  color: #bbb;
+  clear:both;
+}
+.browser_support > span:first-child {
+  float: left;
+  margin-right: 5px;
+}
+.browser_logos span {
+  float: right;
+  height: 17px;
+  width: 17px;
+  background: transparent url('/static/images/browser_logos.png') no-repeat left top;
+  opacity: 0.25;
+  margin-top: -2px;
+}
+.browser_logos .chrome {
+  background-position: left top;
+}
+.browser_logos .ff {
+  background-position: -17px top;
+}
+.browser_logos .safari {
+  background-position: -35px top;
+}
+.browser_logos .ie {
+  background-position: -52px top;
+}
+.browser_logos .opera {
+  background-position: -69px top;
+}
+.browser_logos .supported {
+  opacity: 1;
+}
+#share_buttons {
+  float: right;
+}
+#share_buttons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 1em;
+  margin-top: -4px;
+}
+#share_buttons ul :last-child iframe {
+  margin-top: -1px;
+}
+#share_buttons li {
+  float: left;
+  margin-left: 5px;
+}
+.footer { 
+  font-size: 80%; 
+  color: #bbb; 
+  padding: 15px 0; 
+}
+.footer a { 
+  color: #bbb;
+}
+footer { 
+  clear: both; 
+  text-align: left; 
+  padding: 20px 0;
+  font-size: 12px; 
+  border-top: 1px solid #ddd;
+}
+footer .note {
+  color: #bbb;
+  display: block;
+  margin-top: 10px;
+}
+.madeby {
+  float: right; width: 30%; margin: 0; text-align: right;
+}
+.madeby img {
+  margin-bottom: -7px;
+  width: 50px;
+  height: 20px;
+}
+.cc {
+  font-size: 80%;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,374 @@
+{% extends "../base.html" %}
+
+{% block headtitle %}Tutorials{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="/static/css/samples_index.css" />
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script>
+    google.load("jquery", "1.4.2");
+
+    function clearFilter() {
+      $(".sample.hidden").removeClass('hidden');
+      $("#filter").addClass('hidden');
+    };
+
+    function filterTag() {
+      var tag = $(this).text();
+      $(".sample span.tag:not(:contains('" + tag + "'))").closest('.sample').addClass('hidden');
+      $(".sample span.tag:contains('" + tag + "')").closest('.sample').removeClass('hidden');
+      $('#filter_tag').text(tag);
+      $('#filter').removeClass('hidden');
+    };
+
+    google.setOnLoadCallback(function() {
+      $('.tag').live('click', filterTag);
+    });
+  </script>
+{% endblock %}
+
+{% block body %}
+  {% include "../section_header.html" %}
+  <section>
+    <div id="filter" class="hidden">
+      Currently filtering by tag <span id="filter_tag"></span>.
+      <a href="javascript:clearFilter();">[Clear filter]</a>
+    </div>
+  </section>
+  <aside id="tags">
+    <h3>Filter by tag</h3>
+    <div class="tag">appcache</div>
+    <div class="tag">audio</div>
+    <div class="tag">devtools</div>
+    <div class="tag">file</div>
+    <div class="tag">flash</div>
+    <div class="tag">geolocation</div>
+    <div class="tag">notifications</div>
+    <div class="tag">offline</div>
+    <div class="tag">performance</div>
+    <div class="tag">webdatabase</div>
+    <div class="tag">webfonts</div>
+    <div class="tag">workers</div>
+  </aside>
+
+  <div id="index">
+    <a href="index.xml"><img src="/static/images/feed_icon16x16.png" /></a>
+
+    <article class="sample">
+      <h2 id="offline-the-why" data-pubdate="2010-08-02">
+        <a href="offline/whats-offline/">"Offline": What does it mean and why should I care?</a>
+      </h2>
+      <div>
+        <span class="date">August 2, 2010</span>
+        <span class="tag">offline</span>
+      </div>
+      <div class="summary">
+        A discussion of what it means to take an application "offline" and the options available
+        to developers for doing so.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="offline/whats-offline/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie supported"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="webfonts" data-pubdate="2010-08-02">
+        <a href="webfonts/quick/">Quick guide to webfonts via @font-face</a>
+      </h2>
+      <div>
+        <span class="date">August 2, 2010</span>
+        <span class="tag">webfonts</span>
+      </div>
+      <div class="summary">
+        Webfonts give new typographic freedom to designers while retaining scalability and accessibility.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="webfonts/quick/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie supported"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="chrome-devtools-audit-panel" data-pubdate="2010-07-28">
+        <a href="developertools/auditpanel/">Auditing Your Web App For Speed</a>
+      </h2>
+      <div>
+        <span class="date">July 28th, 2010</span>
+        <span class="tag">devtools</span>
+      </div>
+      <div class="summary">
+        The Audit Panel is an excellent tool for examining latency in your web apps. It offers customized recommendations to
+        enhance performance and reduce latency.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="developertools/auditpanel/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera"></span>
+           <span class="ie"></span>
+           <span class="safari"></span>
+           <span class="ff"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="web-workers" data-pubdate="2010-07-26">
+        <a href="workers/basics/">The Basics of Web Workers</a>
+      </h2>
+      <div>
+        <span class="date">July 26th, 2010</span>
+        <span class="tag">performance</span>
+        <span class="tag">workers</span>
+      </div>
+      <div class="summary">
+        Web Workers are a means of spawning background scripts in your application,
+        giving thread-like message passing for handling computationally intensive tasks.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="workers/basics/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="chrome-devtools-part1" data-pubdate="2010-06-18">
+        <a href="developertools/part1/">Introduction to Chrome Developer Tools, Part One</a>
+      </h2>
+      <div>
+        <span class="date">June 18th, 2010</span>
+        <span class="tag">devtools</span>
+      </div>
+      <div class="summary">
+        An introduction to the tools available in Google Chrome that make a developer's life easier!
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="developertools/part1/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera"></span>
+           <span class="ie"></span>
+           <span class="safari"></span>
+           <span class="ff"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="best-practices-faster-web" data-pubdate="2010-06-18">
+        <a href="speed/quick/">Best Practices for a Faster Web App with HTML5</a>
+      </h2>
+      <div>
+        <span class="date">June 18th, 2010</span>
+        <span class="tag">appcache</span>
+        <span class="tag">offline</span>
+        <span class="tag">performance</span>
+        <span class="tag">webdatabase</span>
+      </div>
+      <div class="summary">
+        How to effectively use features from HTML5 to improve the performance and responsiveness of your app.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="speed/quick/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie supported"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="intro-appcache" data-pubdate="2010-06-18">
+        <a href="appcache/beginner/">A Beginner's Guide to Using the Application Cache</a>
+      </h2>
+      <div>
+        <span class="date">June 18th, 2010</span>
+        <span class="tag">appcache</span>
+        <span class="tag">offline</span>
+      </div>
+      <div class="summary">
+        A step-by-step guide to taking your web app offline using the application cache APIs.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="appcache/beginner/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="todolist-offline" data-pubdate="2010-06-18">
+        <a href="offline/takingappoffline/">Practical Guide to Take Your TODO List Offline</a>
+      </h2>
+      <div>
+        <span class="date">June 18th, 2010</span>
+        <span class="tag">appcache</span>
+        <span class="tag">offline</span>
+      </div>
+      <div class="summary">
+        Expanding on the <a href="webdatabase/todo/">simple TODO list</a>, this tutorial
+        gives a practical guide for taking the sample offline using the application cache.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="offline/takingappoffline/">View tutorial</a> &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="reading-files-js" data-pubdate="2010-06-18">
+        <a href="file/dndfiles/">Reading local files in JavaScript</a>
+      </h2>
+      <div>
+        <span class="date">June 18th, 2010</span>
+        <span class="tag">file</span>
+      </div>
+      <div class="summary">
+        Starter guide for implementing file drag and drop from the desktop to the browser
+        using the File and FileReader APIs.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="file/dndfiles/">View tutorial</a>  &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera"></span>
+           <span class="ie"></span>
+           <span class="safari"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="geolocation-tripmeter" data-pubdate="2010-05-24">
+        <a href="geolocation/trip_meter/">A Simple Trip Meter using the Geolocation API</a>
+      </h2>
+      <div>
+        <span class="date">May 24th, 2010</span>
+        <span class="tag">geolocation</span>
+      </div>
+      <div class="summary">
+        Learn how to implement geolocation very quickly including a distance calculator
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="geolocation/trip_meter/">View tutorial</a>  &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="intro-noticiations-api" data-pubdate="2010-02-24">
+        <a href="notifications/quick/">Using the Notifications API</a>
+      </h2>
+      <div>
+        <span class="date">February 24th, 2010</span>
+        <span class="tag">notifications</span>
+      </div>
+      <div class="summary">
+        Learn the notification basics creating a twitter notification
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="notifications/quick/">View tutorial</a>  &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera"></span>
+           <span class="ie"></span>
+           <span class="safari"></span>
+           <span class="ff"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="todolist-webdb" data-pubdate="2010-02-17">
+        <a href="webdatabase/todo/">A Simple TODO list using HTML5 WebDatabases</a>
+      </h2>
+      <div>
+        <span class="date">February 17th, 2010</span>
+        <span class="tag">webdatabase</span>
+        <span class="tag">offline</span>
+      </div>
+      <div class="summary">
+        Create a TODO list which persists data using a client side database.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="webdatabase/todo/">View tutorial</a>  &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+    <article class="sample">
+      <h2 id="quick-guide-audio-tag" data-pubdate="2010-02-05">
+        <a href="audio/quick/">Quick Guide to Implementing the HTML5 Audio Tag</a>
+      </h2>
+      <div>
+        <span class="date">February 5th, 2010</span>
+        <span class="tag">audio</span>
+        <span class="tag">flash</span>
+      </div>
+      <div class="summary">
+        Learn how to use the HTML5 audio tag and fall back to Flash on 
+        platforms which do not support it.
+      </div>
+      <div class="footer_links">
+         <span class="buttonlink"><a href="audio/quick/">View tutorial</a>  &rArr;</span>
+         <span class="browser_logos">
+           <span class="opera supported"></span>
+           <span class="ie"></span>
+           <span class="safari supported"></span>
+           <span class="ff supported"></span>
+           <span class="chrome supported"></span>
+         </span>
+      </div>
+    </article>
+
+  </div>
+
+  {% include "../footer.html" %}
+
+{% endblock %}

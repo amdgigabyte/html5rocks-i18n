@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-05 08:36-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: studio.html:8 studio.html.py:55
+msgid "HTML5 Studio"
+msgstr "Estúdio HTML5"
+
+#: studio.html:33
+msgid "Info"
+msgstr "Info"
+
+#: studio.html:34 studio.html.py:73
+msgid "View Source"
+msgstr "Código-fonte"
+
+#: studio.html:35 studio.html.py:74
+msgid "Download Sample"
+msgstr ""
+
+#: studio.html:41
+msgid "Sup tooltip"
+msgstr ""
+
+#: studio.html:43
+msgid "Yeah thats how we roll.."
+msgstr ""
+
+#: studio.html:46
+msgid "Close"
+msgstr "Fechar"
+
+#: studio.html:56
+msgid "Hey chief."
+msgstr ""
+
+#: studio.html:58
+msgid "So the idea here is:"
+msgstr ""
+
+#: studio.html:60
+msgid "See cool stuff."
+msgstr ""
+
+#: studio.html:61
+msgid "Learn how it"
+msgstr ""
+
+#: studio.html:62
+msgid "Use it in your own work."
+msgstr ""
+
+#: studio.html:65
+msgid ""
+"The HTML5 Studio has nine demos that show off some fanciful sides of HTML5, "
+"CSS3 and friends."
+msgstr ""
+
+#: studio.html:67
+msgid ""
+"Peek around, look under the covers at the source, and please reuse the code "
+"in your own applications and sites."
+msgstr ""
+
+#: studio.html:72
+msgid "return to grid"
+msgstr ""
+
+#: studio.html:78
+msgid "Video PiP"
+msgstr ""
+
+#: studio.html:79
+msgid ""
+"Use Picture-in-picture to swap between two video sources while enjoying a "
+"color glow effect. Custom pause, mute and progress bar."
+msgstr ""
+
+#: studio.html:81 studio.html.py:149
+msgid "HTML5 video"
+msgstr ""
+
+#: studio.html:82
+msgid "Media element API"
+msgstr ""
+
+#: studio.html:83 studio.html.py:150
+msgid "Canvas"
+msgstr ""
+
+#: studio.html:87 studio.html.py:90
+msgid "Geolocation"
+msgstr ""
+
+#: studio.html:88
+msgid "Peruse local job listings and envision your commute."
+msgstr ""
+
+#: studio.html:91
+msgid "Google Base API"
+msgstr ""
+
+#: studio.html:92
+msgid "Google Maps API"
+msgstr ""
+
+#: studio.html:95
+msgid "Newspaper Columns"
+msgstr ""
+
+#: studio.html:96
+msgid ""
+"A newspaper-like layout provided by CSS3. Adjust the sliders to understand "
+"the styles."
+msgstr ""
+
+#: studio.html:98
+msgid "CSS3 Columns"
+msgstr ""
+
+#: studio.html:102
+msgid "Podcast Player"
+msgstr ""
+
+#: studio.html:103
+msgid ""
+"Load in podcast feeds dynamically, then listen to episodes in a custom "
+"player UI."
+msgstr ""
+
+#: studio.html:111
+msgid "Coverflow"
+msgstr ""
+
+#: studio.html:112
+msgid "Image gallery in a coverflow UI"
+msgstr ""
+
+#: studio.html:114 studio.html.py:151
+msgid "CSS 2D Transforms"
+msgstr ""
+
+#: studio.html:115
+msgid "CSS 3D Transforms"
+msgstr ""
+
+#: studio.html:120
+msgid "Slideshow"
+msgstr ""
+
+#: studio.html:121
+msgid ""
+"A minimal version of the <a href=\"http://slides.html5rocks.com\" target="
+"\"_blank\">HTML5 Slide Deck</a>, ready for you to adapt to your uses."
+msgstr ""
+
+#: studio.html:123
+msgid "CSS3 Transitions"
+msgstr ""
+
+#: studio.html:124
+msgid "CSS3 Gradients"
+msgstr ""
+
+#: studio.html:125
+msgid "CSS3 2D Transforms"
+msgstr ""
+
+#: studio.html:129
+msgid "Page Flip"
+msgstr ""
+
+#: studio.html:130
+msgid "An animated page flip of real HTML content."
+msgstr ""
+
+#: studio.html:132
+msgid "CSS3 2D transforms"
+msgstr ""
+
+#: studio.html:133
+msgid "CSS3 animation"
+msgstr ""
+
+#: studio.html:137
+msgid "Drag n Drop Photos"
+msgstr ""
+
+#: studio.html:138
+msgid "Drag files in from your machine, get an instant preview"
+msgstr ""
+
+#: studio.html:140
+msgid "HTML5 Drag "
+msgstr ""
+
+#: studio.html:141
+msgid "FileReader API"
+msgstr ""
+
+#: studio.html:146
+msgid "Video Cube"
+msgstr ""
+
+#: studio.html:147
+msgid ""
+"Build a cube of ASCII reflecting a video in realtime and reposition the view."
+msgstr ""
+
+#: studio.html:152
+msgid "CSS3 mask image"
+msgstr ""
+
+#: studio.html:170
+msgid "Home"
+msgstr ""
+
+#: studio.html:170
+msgid "Terms"
+msgstr ""
+
+#: studio.html:171
+msgid "Privacy"
+msgstr ""
+
+#: studio.html:172
+msgid "Feedback"
+msgstr ""
+
+#: studio.html:173
+msgid "Report Bug"
+msgstr ""
+
+#: studio.html:174
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: studio.html:176
+msgid ""
+"This site contains information on APIs that are not part of the current W3C "
+"HTML5 specification."
+msgstr ""
+
+#: conf/settings.py:7
+msgid "English"
+msgstr ""
+
+#: conf/settings.py:8
+msgid "Brazilian"
+msgstr ""

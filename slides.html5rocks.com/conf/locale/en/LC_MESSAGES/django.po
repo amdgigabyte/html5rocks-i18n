@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-05 08:35-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: html5.html:34
+msgid "HTML5 presentation"
+msgstr ""
+
+#: html5.html:468
+msgid "This presentation is an HTML5 website"
+msgstr ""
+
+#: html5.html:469
+msgid "Press <span class=\"key\">&rarr;</span> key to advance."
+msgstr ""
+
+#: html5.html:470
+msgid ""
+"Zoom in/out: <span class=\"key\">Ctrl or Command</span> + <span class=\"key"
+"\">+/-</span>"
+msgstr ""
+
+#: html5.html:471
+msgid ""
+"Having issues seeing the presentation? Read the <a href=\"disclaimer.html"
+"\">disclaimer</a>"
+msgstr ""
+
+#: html5.html:496
+msgid "Web Development to the next level"
+msgstr ""
+
+#: html5.html:499
+msgid ""
+"Including other next generation technologies of the Web Development stack"
+msgstr ""
+
+#: html5.html:505
+msgid "Rough Timeline of Web Technologies"
+msgstr ""
+
+#: html5.html:565
+msgid "New Selectors"
+msgstr ""
+
+#: html5.html:570
+msgid "Finding elements by class (DOM API)"
+msgstr ""
+
+#: html5.html:606
+msgid "Web Storage"
+msgstr ""
+
+#: html5.html:669
+msgid "Web SQL Database"
+msgstr ""
+
+#: conf/settings.py:7
+msgid "English"
+msgstr ""
+
+#: conf/settings.py:8
+msgid "Brazilian"
+msgstr ""
